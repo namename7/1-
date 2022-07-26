@@ -15,10 +15,38 @@
   <h2>변수</h2>
   
  <script>
-   var movies = ['어벤저스','오펀', '강시', '나홀로집에 ','내부자들'] 
-   for(var i = 0 ; i < movies.length ; i++)
-   console.log(movies[i]);
-   console.log(movies[i]);
+     var a = -100;
+   function sample() {
+    if (a > 0){
+    return;
+    } 
+    console.log('ㅋㅋㅋㅋ');
+     }
+     sample();
+    
+   //a와 b는 더하기 함수의 매개변수(parameter)
+     function 더하기(a,b){
+      console.log(a+b);
+    }
+    더하기(1,100);
+
+    function 인사(이름) {       //이름은 문자열이 아닌 매개변수다
+      console.log('안녕? 나는' + 이름 + '이야.');
+    }
+     인사('일분이');
+     
+     function 더하기2(a,b){
+      return a + b ; 
+      }
+     더하기2(100,200); 
+
+     function 더하기2(a,b){
+      return a + b ; 
+     }
+     console.log(더하기2(100,200));
+          
+     
+
  </script>
 </body>
 </html>
