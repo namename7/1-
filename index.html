@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>자바스크립트의 기초</title>
   <style>
-  body {font-size: 3rem;}   
+  body {font-size: 3rem;}  
+  h1{
+    background:yellow;
+  }
   </style>
   
 </head>
@@ -15,37 +18,24 @@
   <h2>변수</h2>
   
  <script>
-     var a = -100;
-   function sample() {
-    if (a > 0){
-    return;
-    } 
-    console.log('ㅋㅋㅋㅋ');
-     }
-     sample();
     
-   //a와 b는 더하기 함수의 매개변수(parameter)
+     
      function 더하기(a,b){
-      console.log(a+b);
-    }
-    더하기(1,100);
-
-    function 인사(이름) {       //이름은 문자열이 아닌 매개변수다
-      console.log('안녕? 나는' + 이름 + '이야.');
-    }
-     인사('일분이');
-     
-     function 더하기2(a,b){
-      return a + b ; 
+      document.write(a+b); 
       }
-     더하기2(100,200); 
-
-     function 더하기2(a,b){
-      return a + b ; 
-     }
-     console.log(더하기2(100,200));
-          
      
+       var h = 더하기(100,200);
+       console.log(h);
+  
+     function 더하기2(a,b){
+       document.write(a+b);
+       return a + b ; 
+     }
+     
+     var j = 더하기2(100,200);
+     console.log(j);
+          
+     document.querySelector('h1').style.height = j+'px';
 
  </script>
 </body>
